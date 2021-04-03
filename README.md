@@ -1,6 +1,8 @@
 # global_snack_bar
 
-Provides class for global snack bar
+Provides class for global snack bar. 
+Just wrap your content in GlobalMsgWrapper.
+Make sure that your content is a child of a Scaffold.
 
 ## How to use
 

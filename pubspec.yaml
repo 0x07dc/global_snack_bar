@@ -1,6 +1,6 @@
 name: global_snack_bar
 description: Provides class for global snack bar
-version: 0.0.2
+version: 0.0.3
 homepage: https://theparadigme.com
 
 environment:

@@ -5,3 +5,7 @@
 ## [0.0.2] - 4/3/2021
 
 * Updated first two lines of the LICENSE file, to hopefully have pub.dev display that's it's an MIT license (for convenience).
+
+## [0.0.3] - 4/3/2021
+
+* Updated README.md for package and example.
