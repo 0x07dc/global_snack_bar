@@ -18,7 +18,6 @@ class GlobalMsgWrapper extends StatefulWidget {
 
 /// The state of the [GlobalMsgWrapper] Widget
 class _GlobalMsgWrapperState extends State<GlobalMsgWrapper> {
-
   @override
   void initState() {
     super.initState();
@@ -81,7 +80,7 @@ class GlobalSnackBarBloc {
   }
 
   /// Allows for the stream to be closed
-  dispose(){
+  dispose() {
     streamController.close();
   }
 }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:global_snack_bar/global_snack_bar.dart';
 
-
 void main() {
   runApp(MyApp());
 }

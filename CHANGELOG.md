@@ -1,3 +1,15 @@
+## [0.0.10] - 4/30/2021
+
+* Added color to the code in the README.md and updated material
+
+## [0.0.9] - 4/30/2021
+
+* Improved description and formatted code with dartfmt
+
+## [0.0.8] - 4/30/2021
+
+* Added git repository (GitHub)
+
 ## [0.0.7] - 4/30/2021
 
 * Corrected the change log, CHANGELOG.md
