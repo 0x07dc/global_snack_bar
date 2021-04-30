@@ -1,6 +1,6 @@
 name: global_snack_bar
 description: Provides a convenient way to summon a SnackBar Widget on any open page, without much extra code.
-version: 0.0.10
+version: 0.0.11
 homepage: https://theparadigme.com
 repository: https://github.com/0x07dc/global_snack_bar
 
