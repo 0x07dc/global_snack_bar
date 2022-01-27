@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatefulWidget {
-  HomePage({Key key, this.title}) : super(key: key);
+  HomePage({required this.title});
 
   final String title;
 
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   String snackBarActionLabel = 'Touch me';
   String hello = 'Hello, World';
   String goodbye = 'Goodbye, World';
-  String message;
+  String? message;
 
   @override
   Widget build(BuildContext context) {
