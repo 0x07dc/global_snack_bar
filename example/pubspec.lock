@@ -70,10 +70,10 @@ packages:
   global_snack_bar:
     dependency: "direct main"
     description:
-      name: global_snack_bar
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.0.1"
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.11"
   matcher:
     dependency: transitive
     description:

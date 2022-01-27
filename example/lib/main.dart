@@ -28,6 +28,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  String snackBarLabel = 'Hello, Snackers!';
+  String snackBarActionLabel = 'Touch me';
+  String hello = 'Hello, World';
+  String goodbye = 'Goodbye, World';
+  String message;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,13 +42,27 @@ class _HomePageState extends State<HomePage> {
       ),
       body: GlobalMsgWrapper(
         Center(
-          child: Text("Hello, World"),
+          child: Text(message ?? hello),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          GlobalSnackBarBloc.showMessage(
-            GlobalMsg("hello", bgColor: Colors.cyanAccent),
+          GlobalSnackBarBloc.showSnackBarMessage(
+            SnackBar(
+              content: Text(snackBarLabel),
+              margin: EdgeInsets.fromLTRB(15.0, 5.0, 15.0, 10.0),
+              backgroundColor: Colors.teal,
+              behavior: SnackBarBehavior.floating,
+              action: SnackBarAction(
+                label: snackBarActionLabel,
+                textColor: Colors.white,
+                onPressed: () {
+                  setState(() {
+                    message = message == hello ? goodbye : hello;
+                  });
+                },
+              ),
+            ),
           );
         },
         child: Icon(Icons.ac_unit),
