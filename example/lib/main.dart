@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          GlobalSnackBarBloc.showSnackBarMessage(
+          GlobalSnackBarBloc.showSnackBar(
             SnackBar(
               content: Text(snackBarLabel),
               margin: EdgeInsets.fromLTRB(15.0, 5.0, 15.0, 10.0),

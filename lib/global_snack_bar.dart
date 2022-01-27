@@ -56,7 +56,7 @@ class GlobalSnackBarBloc {
   // the rxdart stream controllers returns an Observable instead of a Stream
 
   /// Method to show a [SnackBar] message on any [GlobalSnackBar] Widgets
-  static void showSnackBarMessage(SnackBar data) {
+  static void showSnackBar(SnackBar data) {
     streamController.sink.add(data); // add whatever data we want into the Sink
   }
 
