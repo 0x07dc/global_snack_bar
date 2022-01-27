@@ -38,6 +38,7 @@ class _GlobalMsgWrapperState extends State<GlobalMsgWrapper> {
     SnackBar bar = SnackBar(
       content: Text(msg.text),
       backgroundColor: msg.bgColor,
+      margin: msg.margin,
     );
 
     ScaffoldMessenger.of(context)
@@ -53,13 +54,20 @@ class _GlobalMsgWrapperState extends State<GlobalMsgWrapper> {
 
 /// Provides a model for global messages
 class GlobalMsg {
-  GlobalMsg(this.text, {this.bgColor});
+  GlobalMsg(
+    this.text, {
+    this.bgColor,
+    this.margin,
+  });
 
   /// Text to show in snackbar
   String text = "";
 
   /// Background color of snackbar
   Color? bgColor = Colors.teal;
+
+  /// Empty space to surround the snack bar.
+  EdgeInsetsGeometry? margin;
 }
 
 /// Provides the stream logic for the [GlobalSnackBar]
