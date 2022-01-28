@@ -59,8 +59,8 @@ void main() {
       ),
       floatingActionButton: <span class="hljs-type" style="color: rgb(255, 198, 109);">FloatingActionButton</span>(
         onPressed: () {
-          <span class="hljs-type" style="color: rgb(255, 198, 109);">GlobalSnackBarBloc</span>.showMessage(
-            <span class="hljs-type" style="color: rgb(255, 198, 109);">GlobalMsg</span>(<span class="hljs-string" style="color: rgb(106, 135, 89);">"hello"</span>, bgColor: <span class="hljs-type" style="color: rgb(255, 198, 109);">Colors</span>.cyanAccent),
+          <span class="hljs-type" style="color: rgb(255, 198, 109);">GlobalSnackBarBloc</span>.showSnackBar(
+            <span class="hljs-type" style="color: rgb(255, 198, 109);">SnackBar</span>(content: <span class="hljs-string" style="color: rgb(106, 135, 89);">"hello"</span>, backgroundColor: <span class="hljs-type" style="color: rgb(255, 198, 109);">Colors</span>.cyanAccent),
           );
         },
         child: <span class="hljs-type" style="color: rgb(255, 198, 109);">Icon</span>(<span class="hljs-type" style="color: rgb(255, 198, 109);">Icons</span>.ac_unit),
