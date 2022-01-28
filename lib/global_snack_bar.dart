@@ -33,33 +33,14 @@ class _GlobalMsgWrapperState extends State<GlobalMsgWrapper> {
     super.dispose();
   }
 
-  /// Shows the snackbar on any [GlobalSnackBar] widgets
-  void showSnackBar(GlobalMsg msg) {
-    SnackBar bar = SnackBar(
-      content: Text(msg.text),
-      backgroundColor: msg.bgColor,
-    );
-
-    ScaffoldMessenger.of(context)
-      //..hideCurrentSnackBar()
-      ..showSnackBar(bar);
+  void showSnackBar(SnackBar snackBar) {
+    ScaffoldMessenger.of(context)..showSnackBar(snackBar);
   }
 
   @override
   Widget build(BuildContext context) {
     return widget.content;
   }
-}
-
-/// Provides a model for global messages
-class GlobalMsg {
-  GlobalMsg(this.text, {this.bgColor});
-
-  /// Text to show in snackbar
-  String text = "";
-
-  /// Background color of snackbar
-  Color? bgColor = Colors.teal;
 }
 
 /// Provides the stream logic for the [GlobalSnackBar]
@@ -75,7 +56,7 @@ class GlobalSnackBarBloc {
   // the rxdart stream controllers returns an Observable instead of a Stream
 
   /// Method to show a [SnackBar] message on any [GlobalSnackBar] Widgets
-  static void showMessage(GlobalMsg data) {
+  static void showSnackBar(SnackBar data) {
     streamController.sink.add(data); // add whatever data we want into the Sink
   }
 
