@@ -1,6 +1,7 @@
 library global_snack_bar;
 
 import 'dart:async';
+import 'dart:core';
 
 import 'package:flutter/material.dart';
 
@@ -38,6 +39,7 @@ class _GlobalMsgWrapperState extends State<GlobalMsgWrapper> {
     SnackBar bar = SnackBar(
       content: Text(msg.text),
       backgroundColor: msg.bgColor,
+      duration: msg.duration,
     );
 
     ScaffoldMessenger.of(context)
@@ -53,13 +55,16 @@ class _GlobalMsgWrapperState extends State<GlobalMsgWrapper> {
 
 /// Provides a model for global messages
 class GlobalMsg {
-  GlobalMsg(this.text, {this.bgColor});
-
-  /// Text to show in snackbar
   String text = "";
+  Color bgColor;
+  Duration duration;
 
-  /// Background color of snackbar
-  Color? bgColor = Colors.teal;
+  static const defaultDuration = Duration(seconds: 2);
+
+  GlobalMsg(this.text, {
+    Color this.bgColor = Colors.teal,
+    Duration this.duration = defaultDuration,
+  });
 }
 
 /// Provides the stream logic for the [GlobalSnackBar]
