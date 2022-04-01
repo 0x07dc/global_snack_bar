@@ -1,6 +1,8 @@
-# global_snack_bar
+# global_snack_bar_with_duration
 
 Provides a class for a global snack bar. This makes it convenient to summon a `SnackBar` with simple code, regardless of the `Scaffold` that is currently visible.  
+
+Added an optional duration param. // TODO - update doc
 
 This is useful for cases such as intermittently checking the network connection — cases where you don't know what `Scaffold` will be visible before needing to show a `SnackBar`.  
 
