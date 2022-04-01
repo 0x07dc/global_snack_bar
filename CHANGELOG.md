@@ -1,3 +1,7 @@
+## [0.0.12] - 4/03/2022
+
+* Add duration optional param
+
 ## [0.0.11] - 4/30/2021
 
 * Fixed indent on README.md
