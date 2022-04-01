@@ -1,8 +1,7 @@
-name: global_snack_bar
-description: Provides a convenient way to summon a SnackBar Widget on any open page, without much extra code.
+name: global_snack_bar_with_duration
+description: Provides a convenient way to summon a SnackBar Widget on any open page, without much extra code. (E9 added duration)
 version: 0.0.12
-homepage: https://theparadigme.com
-repository: https://github.com/0x07dc/global_snack_bar
+repository: https://github.com/e9labs/global_snack_bar
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
